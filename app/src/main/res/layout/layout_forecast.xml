@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradiant"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivback"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="#55000000"
+            android:src="@drawable/round_arrow_back_24"
+            app:contentPadding="12dp"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_bg"
+            android:backgroundTint="#321066"
+            android:orientation="horizontal"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="20dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cloudy_sunny"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/t3"
+                style="@style/textHeading.VeryLarge"
+                android:layout_marginStart="10dp"
+                android:paddingVertical="0dp"
+                android:text="25\u00B0"
+                android:textSize="42sp"
+                app:layout_constraintBottom_toBottomOf="@id/img1"
+                app:layout_constraintStart_toEndOf="@id/img1"
+                app:layout_constraintTop_toTopOf="@id/img1" />
+
+            <TextView
+                android:id="@+id/t1"
+                style="@style/textBody"
+                android:text="Tommorow"
+                app:layout_constraintBottom_toTopOf="@id/t3"
+                app:layout_constraintStart_toStartOf="@id/t3" />
+
+            <TextView
+                android:id="@+id/t2"
+                style="@style/textBody"
+                android:text="Mostly Cloudy"
+                app:layout_constraintStart_toStartOf="@id/t3"
+                app:layout_constraintTop_toBottomOf="@id/t3" />
+
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/img1">
+
+                <TextView
+                    style="@style/textBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/rain"
+                    android:gravity="center"
+                    android:text="@string/_22_rain" />
+
+                <TextView
+                    style="@style/textBody"
+                    android:layout_width="0dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/wind"
+                    android:gravity="center"
+                    android:text="@string/wind" />
+
+                <TextView
+                    style="@style/textBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/humidity"
+                    android:gravity="center"
+                    android:text="@string/humi" />
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            tools:listitem="@layout/item_next"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="4" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

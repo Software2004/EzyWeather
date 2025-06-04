@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dimwhite">#dfd6d7</color>
+
+    <color name="brand">#39aca6</color>
+    <color name="brand_ligt">#39aca6</color>
+    <color name="lightBack">#fff</color>
+    <color name="textColor">#131414</color>
+    <color name="textColorSecondary">#5a5a5a</color>
+    <color name="textColorSecondaryAlt">#afafaf</color>
+    <color name="brandTrans">#253574f0</color>
+
+    <color name="btmNavLight">#f0f3f8</color>
+    <color name="btmNavDark">#1e1f20</color>
+    <color name="colorError">#FF2718</color>
+    <color name="green">#4CAF50</color>
+    <color name="starYelo">#FFC107</color>
+    <color name="topColor">#594690</color>
+    <color name="bottom_color">#643d67</color>
+</resources>

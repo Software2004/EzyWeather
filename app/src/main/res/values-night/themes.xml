@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WheatherAppDesign" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand</item>
+        <item name="colorSecondary">@color/textColorSecondaryAlt</item>
+        <item name="backgroundColor">@color/textColor</item>
+        <item name="cardBackgroundColor">@color/black</item>
+        <item name="colorOnBackground">@color/lightBack</item>
+        <item name="android:windowBackground">?backgroundColor</item>
+        <item name="android:navigationBarColor">?backgroundColor</item>
+        <item name="colorOnSecondary">@color/blackLight</item>
+        <item name="colorSecondaryContainer">?colorPrimary</item>
+        <item name="colorTertiary">@color/btmNavDark</item>
+        <item name="colorError">@color/colorError</item>
+
+        <!--        Text Colors-->
+        <item name="android:textColor">?colorOnBackground</item>
+        <item name="android:textColorSecondary">@color/textColorSecondaryAlt</item>
+
+        <!--        Status Bar Styling      -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">?backgroundColor</item>
+
+        <!--        Font Family !-->
+        <item name="fontFamily">@font/asap</item>
+        <item name="android:fontFamily">?fontFamily</item>
+
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+</resources>

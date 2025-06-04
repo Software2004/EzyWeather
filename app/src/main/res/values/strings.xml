@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Ezy Weather</string>
+    <string name="_22_rain"><b>22%</b>\nRain</string>
+    <string name="wind"><b> km/h</b>\nWind Speed</string>
+    <string name="humi"><b>18%</b>\nHumidity</string>
+</resources>

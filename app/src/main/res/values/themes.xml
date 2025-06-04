@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WheatherAppDesign" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand</item>
+        <item name="colorSecondary">@color/textColorSecondary</item>
+        <item name="backgroundColor">@color/lightBack</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="colorOnBackground">@color/textColor</item>
+        <item name="android:windowBackground">?backgroundColor</item>
+
+        <item name="colorSecondaryContainer">@color/brandTrans</item>
+        <item name="colorOnSecondary">@color/blackLight</item>
+        <item name="colorTertiary">@color/bottom_color</item>
+        <item name="colorError">@color/colorError</item>
+
+        <!--        Text Colors -->
+<!--        <item name="android:textColor">?colorOnBackground</item>-->
+<!--        <item name="android:textColorSecondary">@color/textColorSecondary</item>-->
+
+        <!--    Status Bar Styling      -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/topColor</item>
+        <item name="android:navigationBarColor">?colorTertiary</item>
+
+        <!--     Font Family !-->
+        <item name="fontFamily">@font/asap</item>
+        <item name="android:fontFamily">?fontFamily</item>
+
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Theme.WheatherAppDesign" parent="Base.Theme.WheatherAppDesign" />
+
+    <color name="blackLight">#888888</color>
+</resources>

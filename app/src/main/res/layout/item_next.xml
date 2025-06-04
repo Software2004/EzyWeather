@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/dayN"
+        style="@style/textBody"
+        android:text="Sat"
+        app:layout_constraintBottom_toBottomOf="@id/dayWea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dayWea" />
+
+    <TextView
+        android:id="@+id/temp"
+        style="@style/textBody"
+        android:text="30\u00B0"
+        app:layout_constraintBottom_toBottomOf="@id/dayWea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dayWea" />
+
+    <TextView
+        android:id="@+id/dayWea"
+        style="@style/textBody"
+        android:layout_marginStart="15dp"
+        android:drawableStart="@drawable/storm"
+        android:gravity="center_vertical"
+        android:text="Storm"
+        app:layout_constraintStart_toEndOf="@id/dayN"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?colorButtonNormal"
+        android:alpha="0.5"
+        app:layout_constraintTop_toBottomOf="@id/dayWea"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
